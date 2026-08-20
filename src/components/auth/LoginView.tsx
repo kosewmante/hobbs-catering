@@ -25,13 +25,13 @@ export const LoginView: React.FC = () => {
   // Auth Mode: 'signin' | 'register'
   const [authMode, setAuthMode] = useState<'signin' | 'register'>('signin');
 
-  // Form Fields
-  const [parentName, setParentName] = useState('Sarah Bennett');
-  const [email, setEmail] = useState('parent@woodlands.org.uk');
-  const [mobile, setMobile] = useState('07890 123456');
-  const [password, setPassword] = useState('password123');
-  const [childFirstName, setChildFirstName] = useState('Oliver');
-  const [childClass, setChildClass] = useState<string>('Stanton');
+  // Form Fields (Empty initial state for user entry)
+  const [parentName, setParentName] = useState('');
+  const [email, setEmail] = useState('');
+  const [mobile, setMobile] = useState('');
+  const [password, setPassword] = useState('');
+  const [childFirstName, setChildFirstName] = useState('');
+  const [childClass, setChildClass] = useState<string>('');
 
   const [showPassword, setShowPassword] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);

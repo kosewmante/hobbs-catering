@@ -66,7 +66,7 @@ export const LoginView: React.FC = () => {
       <div className="landing-bg-blob-2" />
 
       {/* Top Navbar with Centered Logo */}
-      <header className="landing-nav py-2.5">
+      <header className="landing-nav py-3">
         <div className="flex items-center justify-center">
           <HobbsLogo size="sm" />
         </div>
@@ -75,13 +75,13 @@ export const LoginView: React.FC = () => {
       {/* Main Content: Single-fold Viewport Fit */}
       <main className="landing-main-content">
         
-        {/* Centered Headline with clear vertical spacing between lines */}
-        <div className="mb-5 sm:mb-6 w-full">
+        {/* Centered Headline with generous spacing before card (Arrow 1) */}
+        <div className="mb-9 sm:mb-11 w-full">
           <h1
-            className="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#241810] tracking-tight leading-[1.3]"
+            className="text-2xl sm:text-3xl lg:text-[36px] font-extrabold text-[#241810] tracking-tight leading-[1.3]"
             style={{ fontFamily: 'Outfit, sans-serif' }}
           >
-            <span className="block mb-1.5">Wholesome School Lunches</span>
+            <span className="block mb-2">Wholesome School Lunches</span>
             <span className="text-[#8FA813] block">Made Simple for Parents</span>
           </h1>
         </div>
@@ -89,10 +89,10 @@ export const LoginView: React.FC = () => {
         {/* Centered Compact Parent Card */}
         <div className="landing-card animate-fade-in">
           
-          {/* Card Header Title */}
-          <div className="mb-4 text-center">
+          {/* Card Header Title with generous space before EMAIL ADDRESS (Arrow 2) */}
+          <div className="mb-8 text-center">
             <h2
-              className="text-xl sm:text-2xl font-extrabold text-[#241810]"
+              className="text-2xl font-extrabold text-[#241810]"
               style={{ fontFamily: 'Outfit, sans-serif' }}
             >
               {authMode === 'signin' ? 'Sign In to Parent Portal' : 'Register New Parent Account'}
@@ -121,7 +121,7 @@ export const LoginView: React.FC = () => {
               </div>
             )}
 
-            {/* Email Address */}
+            {/* Email Address (Arrow 3: Space between EMAIL ADDRESS label & input) */}
             <div className="auth-input-group">
               <label className="auth-label">Email Address</label>
               <div className="auth-input-wrapper">
@@ -227,7 +227,7 @@ export const LoginView: React.FC = () => {
             </div>
 
             {/* Action Buttons Section */}
-            <div className="pt-3 space-y-2">
+            <div className="pt-4 space-y-2.5">
               {/* Primary Submit Button */}
               <button
                 type="submit"

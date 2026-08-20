@@ -154,17 +154,17 @@ input, select, textarea {
 
 /* Form Input Elements */
 .auth-input-group {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 .auth-label {
   display: block;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--hobbs-brown);
-  margin-bottom: 4px;
+  margin-bottom: 9px;
 }
 
 .auth-input-wrapper {

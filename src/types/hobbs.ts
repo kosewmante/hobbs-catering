@@ -33,6 +33,7 @@ export interface Student {
   is_halal: boolean;
   allergens: string[];
   dietary_notes?: string;
+  avatar_url?: string;
   created_at?: string;
 }
 

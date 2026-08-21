@@ -286,17 +286,27 @@ export const DietarySettingsView: React.FC = () => {
       ) : null}
 
       {/* Student Cards Display */}
-      {students.map(student => (
-        <div key={student.id} className="card" style={{ position: 'relative', marginBottom: '14px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <h4 style={{ fontSize: '17px', color: 'var(--brand-brown-dark)' }}>{student.name}</h4>
-                <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--text-muted)', backgroundColor: 'var(--bg-subtle)', padding: '2px 8px', borderRadius: '4px' }}>
-                  {student.school_year}
-                </span>
+      {students.map(student => {
+        const defaultAlexAvatar = 'https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?auto=format&fit=crop&w=200&q=80';
+        const defaultFatimaAvatar = 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80';
+        const avatar = student.avatar_url || (student.name.toLowerCase().includes('fatima') ? defaultFatimaAvatar : defaultAlexAvatar);
+
+        return (
+          <div key={student.id} className="card" style={{ position: 'relative', marginBottom: '14px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                <img
+                  src={avatar}
+                  alt={student.name}
+                  style={{ width: '44px', height: '44px', borderRadius: '50%', objectFit: 'cover', border: '2px solid var(--primary-green-light)' }}
+                />
+                <div>
+                  <h4 style={{ fontSize: '17px', color: 'var(--brand-brown-dark)' }}>{student.name}</h4>
+                  <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--text-muted)' }}>
+                    {student.school_year}
+                  </span>
+                </div>
               </div>
-            </div>
             <div style={{ display: 'flex', gap: '6px' }}>
               <button
                 onClick={() => startEditStudent(student)}
@@ -345,7 +355,8 @@ export const DietarySettingsView: React.FC = () => {
             </div>
           )}
         </div>
-      ))}
+      );
+      })}
 
       {/* Parent Contact Settings */}
       <div className="card" style={{ marginTop: '24px' }}>

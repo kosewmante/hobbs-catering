@@ -12,7 +12,7 @@ const activePillStyle: React.CSSProperties = {
   alignItems: 'center',
   gap: '6px',
   backgroundColor: 'var(--primary-green-light)',
-  padding: '6px 12px',
+  padding: '4px 10px 4px 6px',
   borderRadius: 'var(--radius-pill)',
   border: '1px solid #c0e074',
   cursor: 'pointer',
@@ -42,7 +42,7 @@ const dropdownStyle: React.CSSProperties = {
   borderRadius: 'var(--radius-md)',
   boxShadow: '0 10px 30px rgba(0,0,0,0.15)',
   padding: '8px',
-  minWidth: '200px',
+  minWidth: '220px',
   animation: 'fadeIn 0.15s ease-out',
 };
 
@@ -50,6 +50,15 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
   const { students, activeStudent, setActiveStudent } = useStudents();
   const { profile } = useAuth();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const defaultAlexAvatar = 'https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?auto=format&fit=crop&w=200&q=80';
+  const defaultFatimaAvatar = 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80';
+
+  const getStudentAvatar = (student: typeof activeStudent) => {
+    if (!student) return defaultAlexAvatar;
+    if (student.avatar_url) return student.avatar_url;
+    return student.name.toLowerCase().includes('fatima') ? defaultFatimaAvatar : defaultAlexAvatar;
+  };
 
   return (
     <header className="app-header" style={{ position: 'relative' }}>
@@ -71,6 +80,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
             style={activePillStyle}
             title="Switch Active Child"
           >
+            <img
+              src={getStudentAvatar(activeStudent)}
+              alt={activeStudent.name}
+              style={{ width: '24px', height: '24px', borderRadius: '50%', objectFit: 'cover' }}
+            />
             <span style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary-green-dark)' }}>
               {activeStudent.name.split(' ')[0]}
             </span>
@@ -108,6 +122,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
             </div>
             {students.map(student => {
               const isSelected = activeStudent?.id === student.id;
+              const avatar = getStudentAvatar(student);
+
               return (
                 <button
                   key={student.id}
@@ -132,8 +148,18 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
                     marginBottom: '2px'
                   }}
                 >
-                  <span>{student.name}</span>
-                  {isSelected && <Check size={14} color="var(--primary-green-dark)" />}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <img
+                      src={avatar}
+                      alt={student.name}
+                      style={{ width: '28px', height: '28px', borderRadius: '50%', objectFit: 'cover' }}
+                    />
+                    <div>
+                      <div style={{ fontWeight: isSelected ? '800' : '600' }}>{student.name}</div>
+                      <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>{student.school_year}</div>
+                    </div>
+                  </div>
+                  {isSelected && <Check size={16} color="var(--primary-green-dark)" />}
                 </button>
               );
             })}

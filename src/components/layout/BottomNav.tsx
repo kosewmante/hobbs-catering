@@ -2,7 +2,7 @@ import React from 'react';
 import { Utensils, ShoppingBag, Clock, ShieldCheck } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 
-export type TabType = 'profile' | 'menu' | 'cart' | 'orders';
+export type TabType = 'menu' | 'profile' | 'cart' | 'orders';
 
 interface BottomNavProps {
   activeTab: TabType;
@@ -14,18 +14,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
 
   return (
     <nav className="bottom-nav">
-      {/* 1. Dietary */}
-      <button
-        className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
-        onClick={() => onSelectTab('profile')}
-      >
-        <div className="nav-icon-wrapper">
-          <ShieldCheck size={19} />
-        </div>
-        <span>Dietary</span>
-      </button>
-
-      {/* 2. Menu */}
+      {/* 1. Menu */}
       <button
         className={`nav-item ${activeTab === 'menu' ? 'active' : ''}`}
         onClick={() => onSelectTab('menu')}
@@ -34,6 +23,17 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
           <Utensils size={19} />
         </div>
         <span>Menu</span>
+      </button>
+
+      {/* 2. Dietary */}
+      <button
+        className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
+        onClick={() => onSelectTab('profile')}
+      >
+        <div className="nav-icon-wrapper">
+          <ShieldCheck size={19} />
+        </div>
+        <span>Dietary</span>
       </button>
 
       {/* 3. Basket */}

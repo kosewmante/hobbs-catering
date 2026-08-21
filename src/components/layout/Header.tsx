@@ -80,24 +80,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile, activeTab, onSele
       {onSelectTab && (
         <div className="desktop-nav-strip" style={{ display: 'none', alignItems: 'center', gap: '4px' }}>
           <button
-            onClick={() => onSelectTab('profile')}
-            style={{
-              padding: '6px 14px',
-              borderRadius: 'var(--radius-pill)',
-              border: 'none',
-              backgroundColor: activeTab === 'profile' ? 'var(--primary-green-light)' : 'transparent',
-              color: activeTab === 'profile' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
-              fontWeight: '700',
-              fontSize: '13px',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px'
-            }}
-          >
-            <ShieldCheck size={15} /> Dietary
-          </button>
-          <button
             onClick={() => onSelectTab('menu')}
             style={{
               padding: '6px 14px',
@@ -114,6 +96,24 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile, activeTab, onSele
             }}
           >
             <Utensils size={15} /> Menu
+          </button>
+          <button
+            onClick={() => onSelectTab('profile')}
+            style={{
+              padding: '6px 14px',
+              borderRadius: 'var(--radius-pill)',
+              border: 'none',
+              backgroundColor: activeTab === 'profile' ? 'var(--primary-green-light)' : 'transparent',
+              color: activeTab === 'profile' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <ShieldCheck size={15} /> Dietary
           </button>
 
           <button

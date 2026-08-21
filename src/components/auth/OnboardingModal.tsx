@@ -64,7 +64,7 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({ isOpen, onClos
       <div className="modal-content" style={{ maxHeight: '90vh' }}>
         <div style={{ textAlign: 'center', marginBottom: '16px' }}>
           <img
-            src="/notes/logo-org.png"
+            src="/logo-org.png"
             alt="Hobbs Catering"
             style={{ height: '36px', objectFit: 'contain', marginBottom: '8px' }}
           />

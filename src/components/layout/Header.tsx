@@ -39,7 +39,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
     <header className="app-header">
       <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
         <img
-          src="/notes/logo-org.png"
+          src="/logo-org.png"
           alt="Hobbs Catering Logo"
           className="brand-logo-img"
           onError={(e) => {

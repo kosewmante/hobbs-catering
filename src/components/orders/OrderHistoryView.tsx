@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { useCart } from '../../context/CartContext';
-import { Clock, Copy, Check, ChevronDown, ChevronUp, Calendar, AlertCircle, Printer, CheckCircle2 } from 'lucide-react';
+import { Clock, Copy, Check, ChevronDown, ChevronUp, Calendar, AlertCircle, Printer, CheckCircle2, Trash2 } from 'lucide-react';
 
 export const OrderHistoryView: React.FC = () => {
-  const { orders, loadingOrders } = useCart();
+  const { orders, loadingOrders, deleteOrder } = useCart();
   const [expandedOrderId, setExpandedOrderId] = useState<string | null>(null);
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
+  const [deletingOrderId, setDeletingOrderId] = useState<string | null>(null);
 
   const toggleExpand = (id: string) => {
     setExpandedOrderId(prev => (prev === id ? null : id));
@@ -19,6 +20,14 @@ export const OrderHistoryView: React.FC = () => {
 
   const handlePrintReceipt = () => {
     window.print();
+  };
+
+  const handleDeleteOrder = async (orderId: string, refCode: string) => {
+    if (window.confirm(`Are you sure you want to cancel and delete order ${refCode} completely?`)) {
+      setDeletingOrderId(orderId);
+      await deleteOrder(orderId);
+      setDeletingOrderId(null);
+    }
   };
 
   if (loadingOrders) {
@@ -101,6 +110,7 @@ export const OrderHistoryView: React.FC = () => {
 
       {orders.map(order => {
         const isExpanded = expandedOrderId === order.id;
+        const isDeleting = deletingOrderId === order.id;
         const formattedDate = new Date(order.created_at).toLocaleDateString('en-GB', {
           day: 'numeric',
           month: 'short',
@@ -223,27 +233,48 @@ export const OrderHistoryView: React.FC = () => {
               </div>
             )}
 
-            <button
-              onClick={() => toggleExpand(order.id)}
-              style={{
-                width: '100%',
-                background: 'none',
-                border: 'none',
-                borderTop: '1px solid var(--border-light)',
-                paddingTop: '8px',
-                color: 'var(--primary-green-dark)',
-                fontSize: '12px',
-                fontWeight: '700',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '4px',
-                cursor: 'pointer'
-              }}
-            >
-              {isExpanded ? 'Hide Itemized Breakdown' : 'Show Scheduled Meals Breakdown'}
-              {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-            </button>
+            <div style={{ display: 'flex', gap: '8px', borderTop: '1px solid var(--border-light)', paddingTop: '8px' }}>
+              <button
+                onClick={() => toggleExpand(order.id)}
+                style={{
+                  flex: 1,
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--primary-green-dark)',
+                  fontSize: '12px',
+                  fontWeight: '700',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '4px',
+                  cursor: 'pointer'
+                }}
+              >
+                {isExpanded ? 'Hide Breakdown' : 'Show Scheduled Meals'}
+                {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+              </button>
+
+              <button
+                onClick={() => handleDeleteOrder(order.id, order.reference_code)}
+                disabled={isDeleting}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: 'var(--danger-red)',
+                  fontSize: '12px',
+                  fontWeight: '700',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  cursor: 'pointer',
+                  padding: '2px 8px'
+                }}
+                title="Delete this order completely"
+              >
+                <Trash2 size={14} />
+                {isDeleting ? 'Deleting...' : 'Delete Order'}
+              </button>
+            </div>
 
             {isExpanded && (
               <div style={{ marginTop: '10px', paddingTop: '10px', borderTop: '1px dashed var(--border-light)' }}>

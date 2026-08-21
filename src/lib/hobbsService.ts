@@ -242,5 +242,21 @@ export const HobbsService = {
       return list.filter(o => o.parent_id === parentId || !o.parent_id);
     }
     return [];
+  },
+
+  async deleteOrder(orderId: string): Promise<void> {
+    try {
+      await supabase.from('order_items').delete().eq('order_id', orderId);
+      await supabase.from('orders').delete().eq('id', orderId);
+    } catch (e) {
+      console.warn('Supabase order delete error, using local fallback:', e);
+    }
+
+    const stored = localStorage.getItem(LOCAL_STORAGE_KEY_ORDERS);
+    if (stored) {
+      const list: Order[] = JSON.parse(stored);
+      const filtered = list.filter(o => o.id !== orderId);
+      localStorage.setItem(LOCAL_STORAGE_KEY_ORDERS, JSON.stringify(filtered));
+    }
   }
 };

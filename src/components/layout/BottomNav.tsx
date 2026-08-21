@@ -1,8 +1,8 @@
 import React from 'react';
-import { Utensils, CalendarDays, ShoppingBag, Clock, UserCheck } from 'lucide-react';
+import { Utensils, ShoppingBag, Clock, UserCheck } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 
-export type TabType = 'menu' | 'weekly' | 'cart' | 'orders' | 'profile';
+export type TabType = 'menu' | 'cart' | 'orders' | 'profile';
 
 interface BottomNavProps {
   activeTab: TabType;
@@ -21,17 +21,7 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
         <div className="nav-icon-wrapper">
           <Utensils size={19} />
         </div>
-        <span>Daily Menu</span>
-      </button>
-
-      <button
-        className={`nav-item ${activeTab === 'weekly' ? 'active' : ''}`}
-        onClick={() => onSelectTab('weekly')}
-      >
-        <div className="nav-icon-wrapper">
-          <CalendarDays size={19} />
-        </div>
-        <span>Weekly</span>
+        <span>Menu</span>
       </button>
 
       <button

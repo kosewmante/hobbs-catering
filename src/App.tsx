@@ -11,7 +11,6 @@ import { ConflictWarningModal } from './components/menu/ConflictWarningModal';
 import { CartView } from './components/cart/CartView';
 import { OrderHistoryView } from './components/orders/OrderHistoryView';
 import { DietarySettingsView } from './components/profile/DietarySettingsView';
-import { WeeklyView } from './components/menu/WeeklyView';
 import { OnboardingModal } from './components/auth/OnboardingModal';
 import { STATIC_DAILY_MENUS } from './lib/staticMenuData';
 import { MenuItem } from './types/hobbs';
@@ -19,10 +18,11 @@ import { checkDietaryConflict } from './lib/allergenChecker';
 
 const MainAppContent: React.FC = () => {
   const { activeStudent } = useStudents();
-  const { cartItems, addItemToCart, getCartItemForDateAndStudent } = useCart();
+  const { addItemToCart, getCartItemForDateAndStudent } = useCart();
   const { isOnboarded } = useAuth();
 
   const [activeTab, setActiveTab] = useState<TabType>('menu');
+  const [selectedWeekIndex, setSelectedWeekIndex] = useState<number>(0);
   const [selectedDate, setSelectedDate] = useState<string>('2026-09-03');
   const [isOnboardingOpen, setIsOnboardingOpen] = useState<boolean>(!isOnboarded);
 
@@ -31,8 +31,17 @@ const MainAppContent: React.FC = () => {
   const [conflictReasons, setConflictReasons] = useState<string[]>([]);
   const [isConflictModalOpen, setIsConflictModalOpen] = useState(false);
 
-  // Daily menu entries for selected date
+  // Filter daily menu entries for selected date
   const dailyEntries = STATIC_DAILY_MENUS.filter(m => m.date === selectedDate);
+
+  const handleSelectWeek = (weekIndex: number, firstDateOfWeek: string) => {
+    setSelectedWeekIndex(weekIndex);
+    setSelectedDate(firstDateOfWeek);
+  };
+
+  const handleSelectDate = (dateStr: string) => {
+    setSelectedDate(dateStr);
+  };
 
   const handleMealSelection = (item: MenuItem) => {
     if (!activeStudent) return;
@@ -58,27 +67,32 @@ const MainAppContent: React.FC = () => {
     <div className="app-container">
       <Header onOpenProfile={() => setActiveTab('profile')} />
 
-      {/* Main View Switcher */}
       {activeTab === 'menu' && (
         <>
           <StudentSelector onAddStudentClick={() => setActiveTab('profile')} />
-          <DatePickerBar selectedDate={selectedDate} onSelectDate={setSelectedDate} />
+          <DatePickerBar
+            selectedWeekIndex={selectedWeekIndex}
+            selectedDate={selectedDate}
+            onSelectWeek={handleSelectWeek}
+            onSelectDate={handleSelectDate}
+          />
 
           <main style={{ padding: '16px 16px 100px 16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
               <h2 style={{ fontSize: '18px', color: 'var(--brand-brown-dark)' }}>
                 Daily Lunch Offerings
               </h2>
-              <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+              <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: '600' }}>
                 {dailyEntries.length} Options Available
               </span>
             </div>
 
             {dailyEntries.map(entry => {
-              const isOrdered = activeStudent
-                ? !!getCartItemForDateAndStudent(selectedDate, activeStudent.id) &&
-                  getCartItemForDateAndStudent(selectedDate, activeStudent.id)?.menu_item.id === entry.menu_item.id
-                : false;
+              const cartItemForChild = activeStudent
+                ? getCartItemForDateAndStudent(selectedDate, activeStudent.id)
+                : undefined;
+
+              const isOrdered = cartItemForChild?.menu_item.id === entry.menu_item.id;
 
               return (
                 <MealCard
@@ -94,10 +108,6 @@ const MainAppContent: React.FC = () => {
         </>
       )}
 
-      {activeTab === 'weekly' && (
-        <WeeklyView onSelectDate={(d) => { setSelectedDate(d); setActiveTab('menu'); }} />
-      )}
-
       {activeTab === 'cart' && (
         <CartView
           onNavigateToMenu={() => setActiveTab('menu')}
@@ -109,10 +119,8 @@ const MainAppContent: React.FC = () => {
 
       {activeTab === 'profile' && <DietarySettingsView />}
 
-      {/* Bottom Navigation */}
       <BottomNav activeTab={activeTab} onSelectTab={setActiveTab} />
 
-      {/* Conflict Warning Modal */}
       <ConflictWarningModal
         isOpen={isConflictModalOpen}
         item={pendingMeal}
@@ -122,7 +130,6 @@ const MainAppContent: React.FC = () => {
         onCancel={() => setIsConflictModalOpen(false)}
       />
 
-      {/* Onboarding Wizard Modal */}
       <OnboardingModal
         isOpen={isOnboardingOpen}
         onClose={() => setIsOnboardingOpen(false)}

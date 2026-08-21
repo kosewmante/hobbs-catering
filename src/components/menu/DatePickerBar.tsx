@@ -132,12 +132,9 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
         })}
       </div>
 
-      <div style={dayHeaderRowStyle}>
+      <div style={{ padding: '8px 16px 4px 16px', borderTop: '1px solid #f3f0e6' }}>
         <span style={{ fontSize: '11px', fontWeight: '800', color: 'var(--text-muted)', letterSpacing: '0.5px' }}>
           SELECT DAY:
-        </span>
-        <span style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary-green-dark)', fontFamily: 'monospace' }}>
-          {selectedDate}
         </span>
       </div>
 

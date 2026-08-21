@@ -11,20 +11,12 @@ interface DatePickerBarProps {
 
 const stickyHeaderContainerStyle: React.CSSProperties = {
   position: 'sticky',
-  top: '56px',
-  zIndex: 35,
+  top: '62px',
+  zIndex: 40,
   backgroundColor: 'white',
   borderBottom: '1px solid var(--border-light)',
   boxShadow: '0 4px 16px rgba(0,0,0,0.04)',
   paddingTop: '12px',
-};
-
-const weekScrollStripStyle: React.CSSProperties = {
-  display: 'flex',
-  gap: '8px',
-  overflowX: 'auto',
-  padding: '0 16px 12px 16px',
-  scrollbarWidth: 'none',
 };
 
 const dayHeaderRowStyle: React.CSSProperties = {
@@ -33,14 +25,6 @@ const dayHeaderRowStyle: React.CSSProperties = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-};
-
-const dayScrollStripStyle: React.CSSProperties = {
-  display: 'flex',
-  gap: '8px',
-  overflowX: 'auto',
-  padding: '0 16px 12px 16px',
-  scrollbarWidth: 'none',
 };
 
 export const DatePickerBar: React.FC<DatePickerBarProps> = ({
@@ -92,7 +76,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
 
   const getWeekPillStyle = (isSelected: boolean): React.CSSProperties => ({
     flexShrink: 0,
-    padding: '8px 18px',
+    padding: '8px 16px',
     borderRadius: 'var(--radius-pill)',
     backgroundColor: isSelected ? 'var(--primary-green)' : 'white',
     color: isSelected ? 'white' : 'var(--brand-brown-dark)',
@@ -101,13 +85,14 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
     fontSize: '13px',
     cursor: 'pointer',
     boxShadow: isSelected ? '0 4px 12px rgba(140, 182, 16, 0.35)' : '0 2px 6px rgba(0,0,0,0.03)',
-    transition: 'all 0.2s ease'
+    transition: 'all 0.2s ease',
+    whiteSpace: 'nowrap'
   });
 
   const getDayCardStyle = (isSelected: boolean): React.CSSProperties => ({
     flexShrink: 0,
     width: '62px',
-    height: '74px',
+    height: '72px',
     borderRadius: '16px',
     backgroundColor: isSelected ? 'var(--primary-green)' : 'var(--bg-page)',
     color: isSelected ? 'white' : 'var(--brand-brown-dark)',
@@ -132,7 +117,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
         </p>
       </div>
 
-      <div style={weekScrollStripStyle}>
+      <div className="week-pills-strip">
         {weeks.map((w, idx) => {
           const isSelected = selectedWeekIndex === idx;
           const firstDate = w.dates[0]?.dateStr || '2026-09-03';
@@ -158,7 +143,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
         </span>
       </div>
 
-      <div style={dayScrollStripStyle}>
+      <div className="day-cards-strip">
         {availableDaysInWeek.map(({ dateStr }) => {
           const { dayName, dayNum, monthName } = formatDateLabel(dateStr);
           const isSelected = selectedDate === dateStr;

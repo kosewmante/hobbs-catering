@@ -3,10 +3,10 @@ import { useAuth } from '../../context/AuthContext';
 import { useStudents } from '../../context/StudentContext';
 import { ALLERGIES_LIST } from '../../lib/staticMenuData';
 import { Student } from '../../types/hobbs';
-import { Plus, Trash2, Edit2, ShieldAlert, Check, Save, X } from 'lucide-react';
+import { Plus, Trash2, Edit2, ShieldAlert, Check, Save, X, Info, UserCheck, ShieldCheck } from 'lucide-react';
 
 export const DietarySettingsView: React.FC = () => {
-  const { profile, updateProfile, logout } = useAuth();
+  const { profile, updateProfile } = useAuth();
   const { students, addStudent, updateStudent, deleteStudent } = useStudents();
 
   const [editingStudentId, setEditingStudentId] = useState<string | null>(null);
@@ -101,34 +101,57 @@ export const DietarySettingsView: React.FC = () => {
     });
     setIsSavingParent(false);
     setParentSavedSuccess(true);
-    setTimeout(() => setParentSavedSuccess(false), 2500);
+    setTimeout(() => setParentSavedSuccess(false), 3000);
   };
 
-  const getAllergenBtnStyle = (checked: boolean): React.CSSProperties => ({
-    padding: '8px 10px',
-    borderRadius: 'var(--radius-sm)',
-    border: checked ? '1px solid var(--danger-red)' : '1px solid var(--border-light)',
-    backgroundColor: checked ? 'var(--danger-bg)' : 'white',
-    color: checked ? 'var(--danger-red)' : 'var(--text-main)',
-    fontSize: '12px',
-    fontWeight: checked ? '700' : '500',
-    textAlign: 'left',
-    cursor: 'pointer',
+  const getAllergenBtnStyle = (isChecked: boolean): React.CSSProperties => ({
     display: 'flex',
     alignItems: 'center',
-    gap: '6px'
+    gap: '6px',
+    padding: '8px 10px',
+    borderRadius: 'var(--radius-sm)',
+    border: isChecked ? '1px solid var(--danger-red)' : '1px solid var(--border-light)',
+    backgroundColor: isChecked ? 'var(--danger-bg)' : 'white',
+    color: isChecked ? 'var(--danger-red)' : 'var(--text-main)',
+    fontWeight: isChecked ? '700' : '500',
+    fontSize: '11px',
+    cursor: 'pointer',
+    textAlign: 'left'
   });
 
   return (
     <div style={{ padding: '16px 16px 100px 16px' }}>
-      <h2 style={{ fontSize: '20px', color: 'var(--brand-brown-dark)', marginBottom: '4px' }}>
-        Dietary Profiles & Settings
-      </h2>
+      {/* Title */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+        <ShieldCheck size={24} color="var(--primary-green-dark)" />
+        <h2 style={{ fontSize: '20px', color: 'var(--brand-brown-dark)' }}>
+          Dietary Requirements & Profiles
+        </h2>
+      </div>
       <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-        Manage Halal requirements and dietary allergen checklists for your children.
+        Manage Halal options, 14 EU tracked allergens, and kitchen notes for your children.
       </p>
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
+      {/* Hobbs Safety Guarantee Banner */}
+      <div
+        style={{
+          backgroundColor: '#f1f7e4',
+          border: '1px solid #c0e074',
+          borderRadius: 'var(--radius-md)',
+          padding: '12px 14px',
+          marginBottom: '20px',
+          display: 'flex',
+          gap: '10px'
+        }}
+      >
+        <Info size={18} color="var(--primary-green-dark)" style={{ flexShrink: 0, marginTop: '2px' }} />
+        <div style={{ fontSize: '12px', color: 'var(--brand-brown-dark)' }}>
+          <strong>Hobbs Kitchen Safety Standard:</strong> Every order automatically checks your child's dietary profile against daily recipe ingredients to prevent allergen exposure.
+        </div>
+      </div>
+
+      {/* Student List & Add Button */}
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
         <h3 style={{ fontSize: '15px', color: 'var(--brand-brown-dark)' }}>Registered Children</h3>
         {!isAddingNew && !editingStudentId && (
           <button
@@ -150,8 +173,9 @@ export const DietarySettingsView: React.FC = () => {
         )}
       </div>
 
+      {/* Inline Student Form */}
       {(isAddingNew || editingStudentId) ? (
-        <form onSubmit={handleSaveStudent} className="card" style={{ border: '2px solid var(--primary-green)' }}>
+        <form onSubmit={handleSaveStudent} className="card" style={{ border: '2px solid var(--primary-green)', marginBottom: '20px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
             <h4 style={{ fontSize: '15px', color: 'var(--brand-brown-dark)' }}>
               {isAddingNew ? 'Add New Child Profile' : 'Edit Child Profile'}
@@ -202,7 +226,7 @@ export const DietarySettingsView: React.FC = () => {
                 Halal Dietary Requirement
               </div>
               <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>
-                Automatically flag meals containing Pork or non-Halal meats.
+                Automatically flag dishes containing Pork or non-Halal meats.
               </div>
             </div>
             <input
@@ -241,7 +265,7 @@ export const DietarySettingsView: React.FC = () => {
           </div>
 
           <div style={{ marginBottom: '16px' }}>
-            <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', marginBottom: '4px' }}>Additional Dietary Notes</label>
+            <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', marginBottom: '4px' }}>Additional Kitchen Notes</label>
             <textarea
               value={dietaryNotes}
               onChange={e => setDietaryNotes(e.target.value)}
@@ -261,62 +285,80 @@ export const DietarySettingsView: React.FC = () => {
         </form>
       ) : null}
 
+      {/* Student Cards Display */}
       {students.map(student => (
-        <div key={student.id} className="card" style={{ position: 'relative' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '8px' }}>
+        <div key={student.id} className="card" style={{ position: 'relative', marginBottom: '14px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
             <div>
-              <h4 style={{ fontSize: '16px', color: 'var(--brand-brown-dark)' }}>{student.name}</h4>
-              <div style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{student.school_year}</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <h4 style={{ fontSize: '17px', color: 'var(--brand-brown-dark)' }}>{student.name}</h4>
+                <span style={{ fontSize: '11px', fontWeight: '700', color: 'var(--text-muted)', backgroundColor: 'var(--bg-subtle)', padding: '2px 8px', borderRadius: '4px' }}>
+                  {student.school_year}
+                </span>
+              </div>
             </div>
             <div style={{ display: 'flex', gap: '6px' }}>
               <button
                 onClick={() => startEditStudent(student)}
                 style={{ background: 'none', border: 'none', color: 'var(--primary-green-dark)', cursor: 'pointer', padding: '4px' }}
-                title="Edit student"
+                title="Edit student dietary preferences"
               >
-                <Edit2 size={16} />
+                <Edit2 size={18} />
               </button>
               <button
                 onClick={() => deleteStudent(student.id)}
                 style={{ background: 'none', border: 'none', color: 'var(--danger-red)', cursor: 'pointer', padding: '4px' }}
                 title="Delete student"
               >
-                <Trash2 size={16} />
+                <Trash2 size={18} />
               </button>
             </div>
           </div>
 
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginTop: '8px' }}>
-            {student.is_halal && (
-              <span className="badge badge-halal">HALAL DIET</span>
-            )}
-            {student.allergens && student.allergens.length > 0 ? (
-              student.allergens.map((a, i) => (
-                <span key={i} className="badge badge-conflict" style={{ fontSize: '10px' }}>
-                  <ShieldAlert size={10} /> {a}
+          <div style={{ borderTop: '1px solid var(--border-light)', paddingTop: '10px' }}>
+            <div style={{ fontSize: '11px', fontWeight: '800', color: 'var(--text-muted)', textTransform: 'uppercase', marginBottom: '6px' }}>
+              Active Dietary Requirements:
+            </div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+              {student.is_halal && (
+                <span className="badge badge-halal" style={{ fontSize: '11px', padding: '4px 8px' }}>
+                  🕌 HALAL REQUIREMENT ACTIVE
                 </span>
-              ))
-            ) : (
-              <span className="badge badge-green" style={{ fontSize: '10px' }}>No Allergens Specified</span>
-            )}
+              )}
+              {student.allergens && student.allergens.length > 0 ? (
+                student.allergens.map((a, i) => (
+                  <span key={i} className="badge badge-conflict" style={{ fontSize: '11px', padding: '4px 8px' }}>
+                    <ShieldAlert size={12} /> {a}
+                  </span>
+                ))
+              ) : (
+                <span className="badge badge-green" style={{ fontSize: '11px', padding: '4px 8px' }}>
+                  ✓ No Tracked Allergens
+                </span>
+              )}
+            </div>
           </div>
 
           {student.dietary_notes && (
-            <div style={{ fontSize: '11px', color: 'var(--text-muted)', marginTop: '8px', fontStyle: 'italic' }}>
-              "{student.dietary_notes}"
+            <div style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '10px', backgroundColor: 'var(--bg-page)', padding: '8px', borderRadius: '6px', fontStyle: 'italic' }}>
+              Kitchen Note: "{student.dietary_notes}"
             </div>
           )}
         </div>
       ))}
 
+      {/* Parent Contact Settings */}
       <div className="card" style={{ marginTop: '24px' }}>
-        <h3 style={{ fontSize: '15px', color: 'var(--brand-brown-dark)', marginBottom: '12px' }}>
-          Parent / Guardian Contact Details
-        </h3>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '12px' }}>
+          <UserCheck size={18} color="var(--brand-brown-dark)" />
+          <h3 style={{ fontSize: '15px', color: 'var(--brand-brown-dark)' }}>
+            Parent / Guardian Information
+          </h3>
+        </div>
 
         <form onSubmit={handleSaveParent}>
           <div style={{ marginBottom: '10px' }}>
-            <label style={{ display: 'block', fontSize: '11px', fontWeight: '700', marginBottom: '2px' }}>Parent Name</label>
+            <label style={{ display: 'block', fontSize: '11px', fontWeight: '700', marginBottom: '2px' }}>Parent Full Name</label>
             <input
               type="text"
               value={parentName}
@@ -328,7 +370,7 @@ export const DietarySettingsView: React.FC = () => {
           <div style={{ marginBottom: '10px' }}>
             <label style={{ display: 'block', fontSize: '11px', fontWeight: '700', marginBottom: '2px' }}>Phone Number</label>
             <input
-              type="text"
+              type="tel"
               value={parentPhone}
               onChange={e => setParentPhone(e.target.value)}
               style={{ width: '100%', padding: '8px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-light)', fontSize: '13px' }}
@@ -336,7 +378,7 @@ export const DietarySettingsView: React.FC = () => {
           </div>
 
           <div style={{ marginBottom: '14px' }}>
-            <label style={{ display: 'block', fontSize: '11px', fontWeight: '700', marginBottom: '2px' }}>Home / Billing Address</label>
+            <label style={{ display: 'block', fontSize: '11px', fontWeight: '700', marginBottom: '2px' }}>Delivery / Home Address</label>
             <input
               type="text"
               value={parentAddress}
@@ -345,25 +387,17 @@ export const DietarySettingsView: React.FC = () => {
             />
           </div>
 
-          <button type="submit" className="btn-secondary" disabled={isSavingParent}>
-            {parentSavedSuccess ? (
-              <span style={{ color: 'var(--success-green)', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                <Check size={16} /> Saved Successfully
-              </span>
-            ) : (
-              'Update Parent Details'
-            )}
+          <button type="submit" className="btn-secondary" disabled={isSavingParent} style={{ width: '100%' }}>
+            {isSavingParent ? 'Saving Details...' : 'Update Contact Information'}
           </button>
+
+          {parentSavedSuccess && (
+            <div style={{ fontSize: '12px', color: 'var(--success-green)', textAlign: 'center', marginTop: '8px', fontWeight: '700' }}>
+              ✓ Parent contact details updated successfully.
+            </div>
+          )}
         </form>
       </div>
-
-      <button
-        onClick={logout}
-        className="btn-secondary"
-        style={{ marginTop: '16px', color: 'var(--danger-red)', borderColor: '#fca5a5' }}
-      >
-        Log Out of Account
-      </button>
     </div>
   );
 };

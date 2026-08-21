@@ -1,8 +1,8 @@
 import React from 'react';
-import { Utensils, ShoppingBag, Clock, UserCheck } from 'lucide-react';
+import { Utensils, ShoppingBag, Clock, ShieldCheck } from 'lucide-react';
 import { useCart } from '../../context/CartContext';
 
-export type TabType = 'menu' | 'cart' | 'orders' | 'profile';
+export type TabType = 'profile' | 'menu' | 'orders' | 'cart';
 
 interface BottomNavProps {
   activeTab: TabType;
@@ -14,6 +14,18 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
 
   return (
     <nav className="bottom-nav">
+      {/* 1. Dietary */}
+      <button
+        className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
+        onClick={() => onSelectTab('profile')}
+      >
+        <div className="nav-icon-wrapper">
+          <ShieldCheck size={19} />
+        </div>
+        <span>Dietary</span>
+      </button>
+
+      {/* 2. Menu */}
       <button
         className={`nav-item ${activeTab === 'menu' ? 'active' : ''}`}
         onClick={() => onSelectTab('menu')}
@@ -24,6 +36,18 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
         <span>Menu</span>
       </button>
 
+      {/* 3. Order */}
+      <button
+        className={`nav-item ${activeTab === 'orders' ? 'active' : ''}`}
+        onClick={() => onSelectTab('orders')}
+      >
+        <div className="nav-icon-wrapper">
+          <Clock size={19} />
+        </div>
+        <span>Order</span>
+      </button>
+
+      {/* 4. Basket */}
       <button
         className={`nav-item ${activeTab === 'cart' ? 'active' : ''}`}
         onClick={() => onSelectTab('cart')}
@@ -33,26 +57,6 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeTab, onSelectTab }) 
           {totalCount > 0 && <span className="cart-badge">{totalCount}</span>}
         </div>
         <span>Basket</span>
-      </button>
-
-      <button
-        className={`nav-item ${activeTab === 'orders' ? 'active' : ''}`}
-        onClick={() => onSelectTab('orders')}
-      >
-        <div className="nav-icon-wrapper">
-          <Clock size={19} />
-        </div>
-        <span>Orders</span>
-      </button>
-
-      <button
-        className={`nav-item ${activeTab === 'profile' ? 'active' : ''}`}
-        onClick={() => onSelectTab('profile')}
-      >
-        <div className="nav-icon-wrapper">
-          <UserCheck size={19} />
-        </div>
-        <span>Dietary</span>
       </button>
     </nav>
   );

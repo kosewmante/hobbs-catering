@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useCart } from '../../context/CartContext';
-import { Clock, Copy, Check, ChevronDown, ChevronUp, Calendar, AlertCircle } from 'lucide-react';
+import { Clock, Copy, Check, ChevronDown, ChevronUp, Calendar, AlertCircle, Printer, CheckCircle2 } from 'lucide-react';
 
 export const OrderHistoryView: React.FC = () => {
   const { orders, loadingOrders } = useCart();
@@ -15,6 +15,10 @@ export const OrderHistoryView: React.FC = () => {
     navigator.clipboard.writeText(code);
     setCopiedCode(code);
     setTimeout(() => setCopiedCode(null), 2000);
+  };
+
+  const handlePrintReceipt = () => {
+    window.print();
   };
 
   if (loadingOrders) {
@@ -55,7 +59,7 @@ export const OrderHistoryView: React.FC = () => {
 
   const getCardStyle = (status: string): React.CSSProperties => ({
     borderLeft: status === 'pending_transfer' ? '4px solid var(--warning-red)' : '4px solid var(--success-green)',
-    marginBottom: '14px'
+    marginBottom: '16px'
   });
 
   const getBadgeStyle = (status: string): React.CSSProperties => ({
@@ -65,12 +69,35 @@ export const OrderHistoryView: React.FC = () => {
 
   return (
     <div style={{ padding: '16px 16px 100px 16px' }}>
-      <h2 style={{ fontSize: '20px', color: 'var(--brand-brown-dark)', marginBottom: '4px' }}>
-        Order History & Receipts
-      </h2>
-      <p style={{ fontSize: '13px', color: 'var(--text-muted)', marginBottom: '16px' }}>
-        Review scheduled meals and BACS payment transfer reference codes.
-      </p>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <div>
+          <h2 style={{ fontSize: '20px', color: 'var(--brand-brown-dark)' }}>
+            Order History & Receipts
+          </h2>
+          <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
+            Review scheduled meals and BACS payment reference codes.
+          </p>
+        </div>
+        <button
+          onClick={handlePrintReceipt}
+          style={{
+            backgroundColor: 'var(--bg-subtle)',
+            border: '1px solid var(--border-light)',
+            color: 'var(--brand-brown-dark)',
+            padding: '6px 12px',
+            borderRadius: 'var(--radius-sm)',
+            fontSize: '12px',
+            fontWeight: '700',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            cursor: 'pointer'
+          }}
+          title="Print or Save PDF Receipt"
+        >
+          <Printer size={14} /> Print PDF
+        </button>
+      </div>
 
       {orders.map(order => {
         const isExpanded = expandedOrderId === order.id;
@@ -108,6 +135,33 @@ export const OrderHistoryView: React.FC = () => {
                   £{order.total_amount.toFixed(2)}
                 </div>
                 <div style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{order.items.length} lunch(es)</div>
+              </div>
+            </div>
+
+            {/* BACS Payment Progress Stepper */}
+            <div
+              style={{
+                backgroundColor: 'var(--bg-page)',
+                borderRadius: 'var(--radius-sm)',
+                padding: '10px 12px',
+                marginBottom: '12px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                fontSize: '11px',
+                border: '1px solid var(--border-light)'
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#047857', fontWeight: '700' }}>
+                <CheckCircle2 size={13} /> 1. Ref Generated
+              </div>
+              <div style={{ width: '20px', height: '1px', backgroundColor: 'var(--border-light)' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: order.status === 'pending_transfer' ? '#d97706' : '#047857', fontWeight: '700' }}>
+                <CheckCircle2 size={13} /> 2. Transfer Sent
+              </div>
+              <div style={{ width: '20px', height: '1px', backgroundColor: 'var(--border-light)' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '4px', color: order.status === 'confirmed' ? '#047857' : 'var(--text-muted)', fontWeight: '600' }}>
+                <CheckCircle2 size={13} /> 3. Confirmed
               </div>
             </div>
 

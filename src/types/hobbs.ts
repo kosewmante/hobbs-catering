@@ -46,6 +46,8 @@ export interface MenuItem {
   may_contain: string[];
   price: number;
   image_url?: string;
+  description?: string;
+  ingredients_summary?: string;
 }
 
 export interface DailyMenu {

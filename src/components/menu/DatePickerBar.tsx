@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { STATIC_DAILY_MENUS } from '../../lib/staticMenuData';
 import { useStudents } from '../../context/StudentContext';
+import { useCart } from '../../context/CartContext';
 
 interface DatePickerBarProps {
   selectedWeekIndex: number;
@@ -28,7 +29,8 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
   onSelectWeek,
   onSelectDate
 }) => {
-  const { activeStudent } = useStudents();
+  const { students, activeStudent } = useStudents();
+  const { cartItems } = useCart();
 
   const weeks = useMemo(() => {
     const datesMap = new Map<string, { dateStr: string; dayOfWeek: string }>();
@@ -87,7 +89,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
   const getDayCardStyle = (isSelected: boolean): React.CSSProperties => ({
     flexShrink: 0,
     width: '62px',
-    height: '72px',
+    height: '74px',
     borderRadius: '16px',
     backgroundColor: isSelected ? 'var(--primary-green)' : 'var(--bg-page)',
     color: isSelected ? 'white' : 'var(--brand-brown-dark)',
@@ -98,7 +100,8 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
     justifyContent: 'center',
     cursor: 'pointer',
     transition: 'all 0.2s ease',
-    boxShadow: isSelected ? '0 4px 14px rgba(140, 182, 16, 0.35)' : 'none'
+    boxShadow: isSelected ? '0 4px 14px rgba(140, 182, 16, 0.35)' : 'none',
+    position: 'relative'
   });
 
   return (
@@ -143,12 +146,51 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
           const { dayName, dayNum, monthName } = formatDateLabel(dateStr);
           const isSelected = selectedDate === dateStr;
 
+          // Calculate student order completion status for date
+          const itemsOnDate = cartItems.filter(ci => ci.date === dateStr);
+          const uniqueStudentsCount = new Set(itemsOnDate.map(ci => ci.student_id)).size;
+
+          const isFullyOrdered = students.length > 0 && uniqueStudentsCount === students.length;
+          const isPartiallyOrdered = uniqueStudentsCount > 0 && uniqueStudentsCount < students.length;
+
           return (
             <button
               key={dateStr}
               onClick={() => onSelectDate(dateStr)}
               style={getDayCardStyle(isSelected)}
             >
+              {/* Multi-Child Sync Indicator Badge Dot */}
+              {isFullyOrdered && (
+                <span
+                  title="All children have meals scheduled"
+                  style={{
+                    position: 'absolute',
+                    top: '4px',
+                    right: '4px',
+                    width: '8px',
+                    height: '8px',
+                    borderRadius: '50%',
+                    backgroundColor: '#10b981',
+                    boxShadow: '0 0 6px #10b981'
+                  }}
+                />
+              )}
+              {isPartiallyOrdered && (
+                <span
+                  title="1 child has meal scheduled"
+                  style={{
+                    position: 'absolute',
+                    top: '4px',
+                    right: '4px',
+                    width: '8px',
+                    height: '8px',
+                    borderRadius: '50%',
+                    backgroundColor: '#f59e0b',
+                    boxShadow: '0 0 6px #f59e0b'
+                  }}
+                />
+              )}
+
               <span style={{ fontSize: '10px', fontWeight: '800', opacity: 0.85, textTransform: 'uppercase' }}>
                 {dayName}
               </span>

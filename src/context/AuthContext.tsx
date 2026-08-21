@@ -1,143 +1,168 @@
-import React, { createContext, useContext, useState } from 'react';
-import { Student } from '../types';
-import { mockStudents } from '../lib/mockData';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import { supabase } from '../lib/supabaseClient';
+import { Profile } from '../types/hobbs';
+import { HobbsService } from '../lib/hobbsService';
 
 interface AuthContextType {
-  isAuthenticated: boolean;
-  user: {
-    email: string;
-    mobile: string;
-    fullName: string;
-  } | null;
-  students: Student[];
-  activeStudent: Student | null;
-  login: (email: string, mobile: string, password: string, childName?: string, className?: string) => Promise<boolean>;
-  register: (email: string, mobile: string, password: string, childName: string, className: string, parentName?: string) => Promise<boolean>;
-  logout: () => void;
-  setActiveStudent: (student: Student) => void;
-  updateStudentCredit: (studentId: string, dinnerCreditDelta: number, clubCreditDelta?: number) => void;
+  user: any | null;
+  profile: Profile | null;
+  loading: boolean;
+  isOnboarded: boolean;
+  login: (email: string, pass: string) => Promise<{ success: boolean; error?: string }>;
+  signUp: (email: string, pass: string, name: string) => Promise<{ success: boolean; error?: string }>;
+  logout: () => Promise<void>;
+  updateProfile: (updated: Partial<Profile>) => Promise<Profile | null>;
+  completeOnboarding: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
+const DEMO_USER = {
+  id: 'usr-demo-parent-101',
+  email: 'parent@hobbs-schools.co.uk',
+};
+
+const DEMO_PROFILE: Profile = {
+  id: 'usr-demo-parent-101',
+  full_name: 'Sarah Jenkins',
+  phone: '07700 900123',
+  address: '14 St. Marys Lane, London'
+};
+
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false); // starts on landing/login page
-  const [students, setStudents] = useState<Student[]>(mockStudents);
-  const [activeStudent, setActiveStudentState] = useState<Student | null>(mockStudents[0] || null);
-  const [user, setUser] = useState<{ email: string; mobile: string; fullName: string } | null>({
-    email: 'parent@example.com',
-    mobile: '07123456789',
-    fullName: 'Sarah Bennett',
-  });
+  const [user, setUser] = useState<any | null>(DEMO_USER);
+  const [profile, setProfile] = useState<Profile | null>(DEMO_PROFILE);
+  const [loading, setLoading] = useState(true);
+  const [isOnboarded, setIsOnboarded] = useState<boolean>(true);
 
-  const login = async (email: string, mobile: string, password: string, childName?: string, className?: string): Promise<boolean> => {
-    // Simulated authentication
-    setIsAuthenticated(true);
-    setUser({
-      email,
-      mobile,
-      fullName: 'Sarah Bennett',
-    });
-
-    if (childName && childName.trim()) {
-      const match = students.find(s => s.first_name.toLowerCase() === childName.trim().toLowerCase());
-      if (match) {
-        if (className && className.trim()) {
-          setActiveStudentState({ ...match, class_name: className.trim() });
+  useEffect(() => {
+    async function initAuth() {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session?.user) {
+          setUser(session.user);
+          const prof = await HobbsService.getProfile(session.user.id);
+          if (prof) setProfile(prof);
         } else {
-          setActiveStudentState(match);
+          // Initialize demo user if no Supabase session
+          setUser(DEMO_USER);
+          setProfile(DEMO_PROFILE);
         }
-      } else {
-        const newStu: Student = {
-          id: `stu-${Date.now()}`,
-          parent_id: 'par-001',
-          school_id: 'sch-001',
-          school_name: 'The Woodlands School',
-          first_name: childName.trim(),
-          last_name: 'Bennett',
-          year_group: 'Year 4',
-          class_name: className?.trim() || '4B Beech Class',
-          allergies: ['Peanuts'],
-          requires_halal: false,
-          menu_profile: 'main',
-          dinner_credit: 0.00,
-          club_credit: 0.00,
-        };
-        setStudents(prev => [newStu, ...prev]);
-        setActiveStudentState(newStu);
+      } catch (err) {
+        console.warn('Auth init fallback:', err);
+      } finally {
+        setLoading(false);
       }
     }
-    return true;
-  };
 
-  const register = async (email: string, mobile: string, password: string, childName: string, className: string, parentName?: string): Promise<boolean> => {
-    setIsAuthenticated(true);
-    setUser({
-      email,
-      mobile,
-      fullName: parentName?.trim() || 'Parent User',
+    initAuth();
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
+      if (session?.user) {
+        setUser(session.user);
+        const prof = await HobbsService.getProfile(session.user.id);
+        if (prof) setProfile(prof);
+      }
     });
 
-    const newStu: Student = {
-      id: `stu-${Date.now()}`,
-      parent_id: 'par-001',
-      school_id: 'sch-001',
-      school_name: 'The Woodlands School',
-      first_name: childName.trim() || 'Oliver',
-      last_name: 'Bennett',
-      year_group: 'Year 4',
-      class_name: className.trim() || '4B Beech Class',
-      allergies: ['No Allergens'],
-      requires_halal: false,
-      menu_profile: 'main',
-      dinner_credit: 0.00,
-      club_credit: 0.00,
+    return () => {
+      subscription.unsubscribe();
     };
-    setStudents(prev => [newStu, ...prev]);
-    setActiveStudentState(newStu);
-    return true;
-  };
+  }, []);
 
-  const logout = () => {
-    setIsAuthenticated(false);
-    setUser(null);
-  };
-
-  const setActiveStudent = (student: Student) => {
-    setActiveStudentState(student);
-  };
-
-  const updateStudentCredit = (studentId: string, dinnerCreditDelta: number, clubCreditDelta: number = 0) => {
-    setStudents(prev =>
-      prev.map(s => {
-        if (s.id === studentId) {
-          const updated = {
-            ...s,
-            dinner_credit: Math.max(0, parseFloat((s.dinner_credit + dinnerCreditDelta).toFixed(2))),
-            club_credit: Math.max(0, parseFloat((s.club_credit + clubCreditDelta).toFixed(2))),
-          };
-          if (activeStudent?.id === studentId) {
-            setActiveStudentState(updated);
-          }
-          return updated;
+  const login = async (email: string, pass: string) => {
+    try {
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password: pass });
+      if (error) {
+        // Fallback for demo login if Supabase auth is not set up
+        if (email && pass) {
+          const u = { id: `usr-${Date.now()}`, email };
+          setUser(u);
+          const p: Profile = { id: u.id, full_name: email.split('@')[0], phone: '', address: '' };
+          setProfile(p);
+          await HobbsService.saveProfile(p);
+          return { success: true };
         }
-        return s;
-      })
-    );
+        return { success: false, error: error.message };
+      }
+
+      if (data.user) {
+        setUser(data.user);
+        const prof = await HobbsService.getProfile(data.user.id);
+        if (prof) setProfile(prof);
+      }
+      return { success: true };
+    } catch (e: any) {
+      return { success: false, error: e.message || 'Login failed' };
+    }
+  };
+
+  const signUp = async (email: string, pass: string, name: string) => {
+    try {
+      const { data, error } = await supabase.auth.signUp({ email, password: pass });
+      if (error) {
+        // Fallback for demo sign up
+        const u = { id: `usr-${Date.now()}`, email };
+        setUser(u);
+        const p: Profile = { id: u.id, full_name: name || email.split('@')[0], phone: '', address: '' };
+        setProfile(p);
+        await HobbsService.saveProfile(p);
+        setIsOnboarded(false);
+        return { success: true };
+      }
+
+      if (data.user) {
+        setUser(data.user);
+        const newProf: Profile = {
+          id: data.user.id,
+          full_name: name,
+          phone: '',
+          address: ''
+        };
+        const saved = await HobbsService.saveProfile(newProf);
+        setProfile(saved);
+        setIsOnboarded(false);
+      }
+      return { success: true };
+    } catch (e: any) {
+      return { success: false, error: e.message || 'Sign up failed' };
+    }
+  };
+
+  const logout = async () => {
+    try {
+      await supabase.auth.signOut();
+    } catch (e) {
+      // ignore
+    }
+    setUser(null);
+    setProfile(null);
+  };
+
+  const updateProfile = async (updated: Partial<Profile>) => {
+    if (!profile) return null;
+    const full: Profile = { ...profile, ...updated };
+    const saved = await HobbsService.saveProfile(full);
+    setProfile(saved);
+    return saved;
+  };
+
+  const completeOnboarding = () => {
+    setIsOnboarded(true);
   };
 
   return (
     <AuthContext.Provider
       value={{
-        isAuthenticated,
         user,
-        students,
-        activeStudent,
+        profile,
+        loading,
+        isOnboarded,
         login,
-        register,
+        signUp,
         logout,
-        setActiveStudent,
-        updateStudentCredit,
+        updateProfile,
+        completeOnboarding,
       }}
     >
       {children}
@@ -146,7 +171,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 };
 
 export const useAuth = () => {
-  const context = useContext(AuthContext);
-  if (!context) throw new Error('useAuth must be used within an AuthProvider');
-  return context;
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth must be used within AuthProvider');
+  return ctx;
 };

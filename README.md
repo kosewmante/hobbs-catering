@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# Hobbs Catering - School Meal Ordering System
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, mobile-first web application for parents to pre-order school lunches, manage student dietary profiles with dynamic allergen conflict detection, and complete offline BACS bank transfer checkouts.
 
-Currently, two official plugins are available:
+![Hobbs Catering](notes/logo-org.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Auth & Multi-step Onboarding**: Captures parent details, student profiles, Halal requirements, and allergen checklists.
+- **Dynamic Allergen & Halal Engine**: Compares dish ingredients against student dietary profiles, rendering clear warning tags (e.g. *Contains Wheat, Milk - Conflict with Alex's Allergies*).
+- **Interactive Daily & Weekly Ordering**: Horizontal day picker (Sep 3 – Oct 23, 2026) and 8-week overview grid.
+- **Offline BACS Checkout**: Aggregated basket breakdown, unique reference code generator (`HOBBS-XXXXXX`), Hobbs business account details, and `pending_transfer` status tracking.
+- **Order History & Receipts**: Itemized order receipts and payment status badges.
+- **Supabase Integration (`hobbs` schema)**: Database schema migration and master menu seed data included.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🚀 Getting Started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### Prerequisites
+
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🗄️ Database Setup (`hobbs.*`)
+
+Run the SQL migration in `supabase/migrations/01_hobbs_schema.sql` on your Supabase PostgreSQL database to create tables under the `hobbs` schema and seed all 36 school days of daily menus.
+
+---
+
+## 🔒 Environment Variables
+
+Configure `.env.local`:
+
+```env
+VITE_SUPABASE_URL=https://supabase.gravonlabs.com
+VITE_SUPABASE_ANON_KEY=your_anon_key
+VITE_SUPABASE_SCHEMA=hobbs
+```

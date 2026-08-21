@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { useStudents } from '../../context/StudentContext';
 import { useAuth } from '../../context/AuthContext';
-import { ShieldAlert, User, ChevronDown, Check, Plus } from 'lucide-react';
+import { ShieldAlert, User, ChevronDown, Check, Plus, ShieldCheck, Utensils, ShoppingBag, Clock } from 'lucide-react';
+import { TabType } from './BottomNav';
 
 interface HeaderProps {
   onOpenProfile: () => void;
+  activeTab?: TabType;
+  onSelectTab?: (tab: TabType) => void;
 }
 
 const activePillStyle: React.CSSProperties = {
@@ -46,7 +49,7 @@ const dropdownStyle: React.CSSProperties = {
   animation: 'fadeIn 0.15s ease-out',
 };
 
-export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenProfile, activeTab, onSelectTab }) => {
   const { students, activeStudent, setActiveStudent } = useStudents();
   const { profile } = useAuth();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -72,6 +75,85 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProfile }) => {
           }}
         />
       </div>
+
+      {/* Desktop Navigation Tabs (Hidden on Mobile, Displayed on PC screens) */}
+      {onSelectTab && (
+        <div className="desktop-nav-strip" style={{ display: 'none', alignItems: 'center', gap: '4px' }}>
+          <button
+            onClick={() => onSelectTab('profile')}
+            style={{
+              padding: '6px 14px',
+              borderRadius: 'var(--radius-pill)',
+              border: 'none',
+              backgroundColor: activeTab === 'profile' ? 'var(--primary-green-light)' : 'transparent',
+              color: activeTab === 'profile' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <ShieldCheck size={15} /> Dietary
+          </button>
+          <button
+            onClick={() => onSelectTab('menu')}
+            style={{
+              padding: '6px 14px',
+              borderRadius: 'var(--radius-pill)',
+              border: 'none',
+              backgroundColor: activeTab === 'menu' ? 'var(--primary-green-light)' : 'transparent',
+              color: activeTab === 'menu' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <Utensils size={15} /> Menu
+          </button>
+
+          <button
+            onClick={() => onSelectTab('cart')}
+            style={{
+              padding: '6px 14px',
+              borderRadius: 'var(--radius-pill)',
+              border: 'none',
+              backgroundColor: activeTab === 'cart' ? 'var(--primary-green-light)' : 'transparent',
+              color: activeTab === 'cart' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <ShoppingBag size={15} /> Basket
+          </button>
+          <button
+            onClick={() => onSelectTab('orders')}
+            style={{
+              padding: '6px 14px',
+              borderRadius: 'var(--radius-pill)',
+              border: 'none',
+              backgroundColor: activeTab === 'orders' ? 'var(--primary-green-light)' : 'transparent',
+              color: activeTab === 'orders' ? 'var(--primary-green-dark)' : 'var(--text-muted)',
+              fontWeight: '700',
+              fontSize: '13px',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            <Clock size={15} /> Order History
+          </button>
+        </div>
+      )}
 
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
         {students.length > 0 && activeStudent && (

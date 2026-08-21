@@ -80,7 +80,11 @@ const MainAppContent: React.FC = () => {
     <div className="app-container">
       {/* UNIFIED STICKY HEADER WRAPPER FOR MOBILE & WEB */}
       <div style={{ position: 'sticky', top: 0, zIndex: 40, backgroundColor: 'white', borderBottom: '1px solid var(--border-light)', boxShadow: '0 4px 16px rgba(0,0,0,0.05)' }}>
-        <Header onOpenProfile={() => setActiveTab('profile')} />
+        <Header
+          onOpenProfile={() => setActiveTab('profile')}
+          activeTab={activeTab}
+          onSelectTab={setActiveTab}
+        />
         {activeTab === 'menu' && (
           <>
             <DatePickerBar
@@ -113,23 +117,25 @@ const MainAppContent: React.FC = () => {
               No dishes match your active filter on this date. Try selecting <strong>"All Dishes"</strong>.
             </div>
           ) : (
-            dailyEntries.map(entry => {
-              const cartItemForChild = activeStudent
-                ? getCartItemForDateAndStudent(selectedDate, activeStudent.id)
-                : undefined;
+            <div className="menu-dishes-grid">
+              {dailyEntries.map(entry => {
+                const cartItemForChild = activeStudent
+                  ? getCartItemForDateAndStudent(selectedDate, activeStudent.id)
+                  : undefined;
 
-              const isOrdered = cartItemForChild?.menu_item.id === entry.menu_item.id;
+                const isOrdered = cartItemForChild?.menu_item.id === entry.menu_item.id;
 
-              return (
-                <MealCard
-                  key={entry.id}
-                  item={entry.menu_item}
-                  dateStr={selectedDate}
-                  isOrdered={isOrdered}
-                  onSelect={handleMealSelection}
-                />
-              );
-            })
+                return (
+                  <MealCard
+                    key={entry.id}
+                    item={entry.menu_item}
+                    dateStr={selectedDate}
+                    isOrdered={isOrdered}
+                    onSelect={handleMealSelection}
+                  />
+                );
+              })}
+            </div>
           )}
         </main>
       )}

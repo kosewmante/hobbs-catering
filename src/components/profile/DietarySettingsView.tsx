@@ -322,7 +322,7 @@ export const DietarySettingsView: React.FC = () => {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
               {student.is_halal && (
                 <span className="badge badge-halal" style={{ fontSize: '11px', padding: '4px 8px' }}>
-                  🕌 HALAL REQUIREMENT ACTIVE
+                  HALAL REQUIREMENT ACTIVE
                 </span>
               )}
               {student.allergens && student.allergens.length > 0 ? (

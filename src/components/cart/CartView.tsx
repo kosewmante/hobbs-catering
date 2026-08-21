@@ -123,7 +123,7 @@ export const CartView: React.FC<CartViewProps> = ({ onNavigateToMenu, onNavigate
       {Object.entries(itemsByDate).map(([date, items]) => (
         <div key={date} className="card" style={{ marginBottom: '14px' }}>
           <div style={dateHeaderStyle}>
-            <span>📅 {date}</span>
+            <span>Date: {date}</span>
             <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>{items.length} child(ren)</span>
           </div>
 

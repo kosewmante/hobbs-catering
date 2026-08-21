@@ -9,14 +9,9 @@ interface DatePickerBarProps {
   onSelectDate: (dateStr: string) => void;
 }
 
-const stickyHeaderContainerStyle: React.CSSProperties = {
-  position: 'sticky',
-  top: '62px',
-  zIndex: 40,
+const datePickerContainerStyle: React.CSSProperties = {
   backgroundColor: 'white',
-  borderBottom: '1px solid var(--border-light)',
-  boxShadow: '0 4px 16px rgba(0,0,0,0.04)',
-  paddingTop: '12px',
+  paddingTop: '10px',
 };
 
 const dayHeaderRowStyle: React.CSSProperties = {
@@ -107,7 +102,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
   });
 
   return (
-    <div style={stickyHeaderContainerStyle}>
+    <div style={datePickerContainerStyle}>
       <div style={{ padding: '0 16px 10px 16px' }}>
         <h2 style={{ fontSize: '19px', color: 'var(--brand-brown-dark)', marginBottom: '2px' }}>
           Weekly Menu Overview

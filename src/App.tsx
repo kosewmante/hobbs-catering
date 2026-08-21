@@ -64,46 +64,48 @@ const MainAppContent: React.FC = () => {
 
   return (
     <div className="app-container">
-      <Header onOpenProfile={() => setActiveTab('profile')} />
-
-      {activeTab === 'menu' && (
-        <>
+      {/* UNIFIED STICKY HEADER WRAPPER FOR MOBILE & WEB */}
+      <div style={{ position: 'sticky', top: 0, zIndex: 40, backgroundColor: 'white', borderBottom: '1px solid var(--border-light)', boxShadow: '0 4px 16px rgba(0,0,0,0.05)' }}>
+        <Header onOpenProfile={() => setActiveTab('profile')} />
+        {activeTab === 'menu' && (
           <DatePickerBar
             selectedWeekIndex={selectedWeekIndex}
             selectedDate={selectedDate}
             onSelectWeek={handleSelectWeek}
             onSelectDate={handleSelectDate}
           />
+        )}
+      </div>
 
-          <main style={{ padding: '16px 16px 100px 16px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
-              <h2 style={{ fontSize: '18px', color: 'var(--brand-brown-dark)' }}>
-                Daily Lunch Offerings
-              </h2>
-              <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: '600' }}>
-                {dailyEntries.length} Options Available
-              </span>
-            </div>
+      {activeTab === 'menu' && (
+        <main style={{ padding: '16px 16px 100px 16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '14px' }}>
+            <h2 style={{ fontSize: '18px', color: 'var(--brand-brown-dark)' }}>
+              Daily Lunch Offerings
+            </h2>
+            <span style={{ fontSize: '12px', color: 'var(--text-muted)', fontWeight: '600' }}>
+              {dailyEntries.length} Options Available
+            </span>
+          </div>
 
-            {dailyEntries.map(entry => {
-              const cartItemForChild = activeStudent
-                ? getCartItemForDateAndStudent(selectedDate, activeStudent.id)
-                : undefined;
+          {dailyEntries.map(entry => {
+            const cartItemForChild = activeStudent
+              ? getCartItemForDateAndStudent(selectedDate, activeStudent.id)
+              : undefined;
 
-              const isOrdered = cartItemForChild?.menu_item.id === entry.menu_item.id;
+            const isOrdered = cartItemForChild?.menu_item.id === entry.menu_item.id;
 
-              return (
-                <MealCard
-                  key={entry.id}
-                  item={entry.menu_item}
-                  dateStr={selectedDate}
-                  isOrdered={isOrdered}
-                  onSelect={handleMealSelection}
-                />
-              );
-            })}
-          </main>
-        </>
+            return (
+              <MealCard
+                key={entry.id}
+                item={entry.menu_item}
+                dateStr={selectedDate}
+                isOrdered={isOrdered}
+                onSelect={handleMealSelection}
+              />
+            );
+          })}
+        </main>
       )}
 
       {activeTab === 'cart' && (

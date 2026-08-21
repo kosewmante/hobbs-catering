@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useStudents } from '../../context/StudentContext';
 import { ALLERGIES_LIST } from '../../lib/staticMenuData';
-import { Student } from '../../types/hobbs';
+import { Student, HOBBS_SCHOOL_CLASSES } from '../../types/hobbs';
 import { Plus, Trash2, Edit2, ShieldAlert, Check, Save, X, Info, UserCheck, ShieldCheck } from 'lucide-react';
 
 export const DietarySettingsView: React.FC = () => {
@@ -198,15 +198,20 @@ export const DietarySettingsView: React.FC = () => {
           </div>
 
           <div style={{ marginBottom: '14px' }}>
-            <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', marginBottom: '4px' }}>School Year / Class</label>
-            <input
-              type="text"
+            <label style={{ display: 'block', fontSize: '12px', fontWeight: '700', marginBottom: '4px' }}>Child Class *</label>
+            <select
               value={schoolYear}
               onChange={e => setSchoolYear(e.target.value)}
-              placeholder="e.g. Year 3 - Elm Class"
               required
-              style={{ width: '100%', padding: '10px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-light)' }}
-            />
+              style={{ width: '100%', padding: '10px', borderRadius: 'var(--radius-sm)', border: '1px solid var(--border-light)', backgroundColor: 'white', fontSize: '13px', color: 'var(--text-main)' }}
+            >
+              <option value="">Select Child Class...</option>
+              {HOBBS_SCHOOL_CLASSES.map(cls => (
+                <option key={cls} value={cls}>
+                  {cls}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div

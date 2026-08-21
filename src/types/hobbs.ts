@@ -16,6 +16,27 @@ export type AllergenType =
   | 'No Allergens'
   | 'Other';
 
+export const HOBBS_SCHOOL_CLASSES = [
+  'Oak',
+  'Redwood',
+  'Hazel',
+  'Birch',
+  'Willow',
+  'Elm',
+  'Rowan',
+  'Maple',
+  'Aspen',
+  'Sherwood',
+  'Elveden',
+  'Salcey',
+  'Rushmere',
+  'Emberton',
+  'Campbell',
+  'Oxley',
+  'Stanton',
+  'Bridging Year'
+];
+
 export interface Profile {
   id: string;
   full_name: string;

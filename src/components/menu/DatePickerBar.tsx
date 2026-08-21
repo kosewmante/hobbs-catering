@@ -11,7 +11,7 @@ interface DatePickerBarProps {
 
 const stickyHeaderContainerStyle: React.CSSProperties = {
   position: 'sticky',
-  top: '57px',
+  top: '56px',
   zIndex: 35,
   backgroundColor: 'white',
   borderBottom: '1px solid var(--border-light)',

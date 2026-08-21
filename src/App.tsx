@@ -4,7 +4,6 @@ import { StudentProvider, useStudents } from './context/StudentContext';
 import { CartProvider, useCart } from './context/CartContext';
 import { Header } from './components/layout/Header';
 import { BottomNav, TabType } from './components/layout/BottomNav';
-import { StudentSelector } from './components/menu/StudentSelector';
 import { DatePickerBar } from './components/menu/DatePickerBar';
 import { MealCard } from './components/menu/MealCard';
 import { ConflictWarningModal } from './components/menu/ConflictWarningModal';
@@ -69,7 +68,6 @@ const MainAppContent: React.FC = () => {
 
       {activeTab === 'menu' && (
         <>
-          <StudentSelector onAddStudentClick={() => setActiveTab('profile')} />
           <DatePickerBar
             selectedWeekIndex={selectedWeekIndex}
             selectedDate={selectedDate}

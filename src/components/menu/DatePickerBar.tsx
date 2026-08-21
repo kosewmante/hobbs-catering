@@ -111,7 +111,7 @@ export const DatePickerBar: React.FC<DatePickerBarProps> = ({
           Weekly Menu Overview
         </h2>
         <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>
-          Browse & pre-select meals for <strong>{activeStudent ? activeStudent.name : 'your child'}</strong> across the week.
+          Browse meals for <strong>{activeStudent ? activeStudent.name : 'your child'}</strong> across the week.
         </p>
       </div>
 

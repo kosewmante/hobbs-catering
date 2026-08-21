@@ -94,7 +94,7 @@ export const MealCard: React.FC<MealCardProps> = ({ item, dateStr, isOrdered, on
               borderRadius: 'var(--radius-pill)'
             }}
           >
-            £{item.price ? item.price.toFixed(2) : '2.50'}
+            £{item.price ? item.price.toFixed(2) : '2.70'}
           </div>
         </div>
 

@@ -31,7 +31,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Pork"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -45,7 +45,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Wheat",
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -56,7 +56,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "is_halal_suitable": true,
     "allergens": [],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -71,7 +71,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Soya"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -86,7 +86,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Soya"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -102,7 +102,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Soya"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -113,7 +113,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "is_halal_suitable": true,
     "allergens": [],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -124,7 +124,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "is_halal_suitable": true,
     "allergens": [],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -135,7 +135,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "is_halal_suitable": true,
     "allergens": [],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -149,7 +149,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Fish"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -165,7 +165,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -182,7 +182,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Sesame"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -198,7 +198,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -213,7 +213,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -227,7 +227,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Milk"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1534352956036-cd61c79315e6?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -240,7 +240,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Pork"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -254,7 +254,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Egg"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -269,7 +269,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -287,7 +287,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Mustard",
       "Lupin"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -308,7 +308,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Celery",
       "Sulphites"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -324,7 +324,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -341,7 +341,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -355,7 +355,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Mustard"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -368,7 +368,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Pork"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -386,7 +386,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Mustard",
       "Lupin"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -402,7 +402,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     "may_contain": [
       "Soya"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -416,7 +416,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Milk"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -432,7 +432,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Mustard"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -449,7 +449,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Mustard",
       "Lupin"
     ],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -463,7 +463,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Eggs"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -476,7 +476,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Wheat"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -491,7 +491,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Pork"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80"
   },
   {
@@ -505,7 +505,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Milk"
     ],
     "may_contain": [],
-    "price": 2.5,
+    "price": 2.7,
     "image_url": "https://images.unsplash.com/photo-1534352956036-cd61c79315e6?auto=format&fit=crop&w=600&q=80"
   }
 ];
@@ -532,7 +532,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -552,7 +552,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Wheat",
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -569,7 +569,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -590,7 +590,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -611,7 +611,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -633,7 +633,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -650,7 +650,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -667,7 +667,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -684,7 +684,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -704,7 +704,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -726,7 +726,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -743,7 +743,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -764,7 +764,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -785,7 +785,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -807,7 +807,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -824,7 +824,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -841,7 +841,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -858,7 +858,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -881,7 +881,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Sesame"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -903,7 +903,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -920,7 +920,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -941,7 +941,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -962,7 +962,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -984,7 +984,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1001,7 +1001,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1018,7 +1018,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1035,7 +1035,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1056,7 +1056,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1076,7 +1076,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Milk"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534352956036-cd61c79315e6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1093,7 +1093,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1114,7 +1114,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1135,7 +1135,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1157,7 +1157,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1174,7 +1174,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1191,7 +1191,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1208,7 +1208,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1227,7 +1227,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1247,7 +1247,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1264,7 +1264,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1285,7 +1285,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1306,7 +1306,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1328,7 +1328,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1345,7 +1345,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1362,7 +1362,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1379,7 +1379,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1400,7 +1400,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1424,7 +1424,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1441,7 +1441,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1462,7 +1462,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1483,7 +1483,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1505,7 +1505,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1522,7 +1522,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1539,7 +1539,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1556,7 +1556,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1576,7 +1576,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1598,7 +1598,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1615,7 +1615,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1636,7 +1636,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1657,7 +1657,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1679,7 +1679,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1696,7 +1696,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1713,7 +1713,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1730,7 +1730,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1757,7 +1757,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Celery",
         "Sulphites"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1779,7 +1779,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1796,7 +1796,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1817,7 +1817,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1838,7 +1838,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1860,7 +1860,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1877,7 +1877,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1894,7 +1894,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1911,7 +1911,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1934,7 +1934,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1954,7 +1954,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1971,7 +1971,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -1992,7 +1992,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2013,7 +2013,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2035,7 +2035,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2052,7 +2052,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2069,7 +2069,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2086,7 +2086,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2105,7 +2105,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2125,7 +2125,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2142,7 +2142,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2163,7 +2163,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2184,7 +2184,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2206,7 +2206,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2223,7 +2223,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2240,7 +2240,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2257,7 +2257,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2281,7 +2281,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2303,7 +2303,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2320,7 +2320,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2341,7 +2341,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2362,7 +2362,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2384,7 +2384,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2401,7 +2401,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2418,7 +2418,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2435,7 +2435,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2455,7 +2455,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2477,7 +2477,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2494,7 +2494,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2515,7 +2515,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2536,7 +2536,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2558,7 +2558,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2575,7 +2575,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2592,7 +2592,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2609,7 +2609,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2629,7 +2629,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Milk"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2651,7 +2651,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2668,7 +2668,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2689,7 +2689,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2710,7 +2710,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2732,7 +2732,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2749,7 +2749,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2766,7 +2766,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2783,7 +2783,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2806,7 +2806,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2826,7 +2826,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Eggs"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2843,7 +2843,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2864,7 +2864,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2885,7 +2885,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2907,7 +2907,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2924,7 +2924,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2941,7 +2941,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2958,7 +2958,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2977,7 +2977,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Wheat"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -2997,7 +2997,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3014,7 +3014,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3035,7 +3035,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3056,7 +3056,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3078,7 +3078,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3095,7 +3095,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3112,7 +3112,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3129,7 +3129,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3150,7 +3150,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3170,7 +3170,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Wheat",
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3187,7 +3187,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3208,7 +3208,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3229,7 +3229,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3251,7 +3251,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3268,7 +3268,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3285,7 +3285,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3302,7 +3302,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3322,7 +3322,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3344,7 +3344,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3361,7 +3361,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3382,7 +3382,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3403,7 +3403,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3425,7 +3425,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3442,7 +3442,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3459,7 +3459,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3476,7 +3476,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3499,7 +3499,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Sesame"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3521,7 +3521,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3538,7 +3538,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3559,7 +3559,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3580,7 +3580,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3602,7 +3602,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3619,7 +3619,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3636,7 +3636,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3653,7 +3653,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3674,7 +3674,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3694,7 +3694,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Milk"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534352956036-cd61c79315e6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3711,7 +3711,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3732,7 +3732,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3753,7 +3753,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3775,7 +3775,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3792,7 +3792,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3809,7 +3809,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3826,7 +3826,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3845,7 +3845,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3865,7 +3865,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3882,7 +3882,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3903,7 +3903,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3924,7 +3924,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3946,7 +3946,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3963,7 +3963,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3980,7 +3980,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -3997,7 +3997,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4017,7 +4017,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4039,7 +4039,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4056,7 +4056,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4077,7 +4077,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4098,7 +4098,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4120,7 +4120,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4137,7 +4137,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4154,7 +4154,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4171,7 +4171,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4198,7 +4198,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Celery",
         "Sulphites"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4220,7 +4220,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4237,7 +4237,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4258,7 +4258,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4279,7 +4279,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4301,7 +4301,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4318,7 +4318,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4335,7 +4335,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4352,7 +4352,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4375,7 +4375,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4395,7 +4395,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4412,7 +4412,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4433,7 +4433,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4454,7 +4454,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4476,7 +4476,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4493,7 +4493,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4510,7 +4510,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4527,7 +4527,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4546,7 +4546,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4566,7 +4566,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4583,7 +4583,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4604,7 +4604,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4625,7 +4625,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4647,7 +4647,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4664,7 +4664,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4681,7 +4681,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4698,7 +4698,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4722,7 +4722,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4744,7 +4744,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4761,7 +4761,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4782,7 +4782,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4803,7 +4803,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4825,7 +4825,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4842,7 +4842,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4859,7 +4859,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4876,7 +4876,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4896,7 +4896,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4918,7 +4918,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4935,7 +4935,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4956,7 +4956,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4977,7 +4977,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -4999,7 +4999,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5016,7 +5016,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5033,7 +5033,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5050,7 +5050,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5070,7 +5070,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Milk"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5092,7 +5092,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5109,7 +5109,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5130,7 +5130,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5151,7 +5151,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5173,7 +5173,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5190,7 +5190,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5207,7 +5207,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5224,7 +5224,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5247,7 +5247,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5267,7 +5267,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Eggs"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5284,7 +5284,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5305,7 +5305,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5326,7 +5326,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5348,7 +5348,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5365,7 +5365,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5382,7 +5382,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5399,7 +5399,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5418,7 +5418,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Wheat"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5438,7 +5438,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5455,7 +5455,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5476,7 +5476,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5497,7 +5497,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5519,7 +5519,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5536,7 +5536,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5553,7 +5553,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5570,7 +5570,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5591,7 +5591,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5611,7 +5611,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Wheat",
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5628,7 +5628,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5649,7 +5649,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5670,7 +5670,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5692,7 +5692,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5709,7 +5709,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5726,7 +5726,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5743,7 +5743,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5763,7 +5763,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5785,7 +5785,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5802,7 +5802,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5823,7 +5823,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5844,7 +5844,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5866,7 +5866,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5883,7 +5883,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5900,7 +5900,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5917,7 +5917,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5940,7 +5940,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Sesame"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5962,7 +5962,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -5979,7 +5979,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6000,7 +6000,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6021,7 +6021,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6043,7 +6043,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6060,7 +6060,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6077,7 +6077,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6094,7 +6094,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6115,7 +6115,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6135,7 +6135,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Milk"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534352956036-cd61c79315e6?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6152,7 +6152,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6173,7 +6173,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6194,7 +6194,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6216,7 +6216,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6233,7 +6233,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6250,7 +6250,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6267,7 +6267,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6286,7 +6286,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Pork"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6306,7 +6306,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Egg"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6323,7 +6323,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6344,7 +6344,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6365,7 +6365,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6387,7 +6387,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6404,7 +6404,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6421,7 +6421,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6438,7 +6438,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6459,7 +6459,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6483,7 +6483,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Mustard",
         "Lupin"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6500,7 +6500,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6521,7 +6521,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6542,7 +6542,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6564,7 +6564,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6581,7 +6581,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6598,7 +6598,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6615,7 +6615,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6635,7 +6635,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Fish"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6657,7 +6657,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "may_contain": [
         "Soya"
       ],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6674,7 +6674,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6695,7 +6695,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6716,7 +6716,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6738,7 +6738,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
         "Soya"
       ],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6755,7 +6755,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6772,7 +6772,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80"
     }
   },
@@ -6789,7 +6789,7 @@ export const STATIC_DAILY_MENUS: StaticDailyMenu[] = [
       "is_halal_suitable": true,
       "allergens": [],
       "may_contain": [],
-      "price": 2.5,
+      "price": 2.7,
       "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80"
     }
   }

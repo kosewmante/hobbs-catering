@@ -29,6 +29,11 @@ export const MealCard: React.FC<MealCardProps> = ({ item, dateStr, isOrdered, on
             src={item.image_url || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80'}
             alt={item.name}
             style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.onerror = null;
+              target.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80';
+            }}
           />
           
           {/* Category Pill Badges */}

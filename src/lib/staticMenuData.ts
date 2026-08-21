@@ -270,7 +270,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
       "Soya"
     ],
     "price": 2.5,
-    "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
+    "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80"
   },
   {
     "id": "item-19",
@@ -417,7 +417,7 @@ export const STATIC_MENU_ITEMS: MenuItem[] = [
     ],
     "may_contain": [],
     "price": 2.5,
-    "image_url": "https://images.unsplash.com/photo-1621996346565-e3d5d6281292?auto=format&fit=crop&w=600&q=80"
+    "image_url": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&q=80"
   },
   {
     "id": "item-28",
